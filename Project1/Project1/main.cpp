@@ -1,14 +1,18 @@
 #include <iostream>
 #include "student.h"
 #include "Teacher.h"
+#include "Courses.h"
 using namespace std;
 
 int main()
 {
 	Teacher james = Teacher("James");
-	Teacher bob = Teacher("Bob");
-	cout << james.getName() << endl;
-	cout << bob.getName() << endl;
+	Courses cis17 = Courses("CIS17A", "Programming C++ Objects", james);
+	Student bob = Student("bob");
+	Student jane = Student("jane");
+
+	cis17.enrollStudent(bob, 0);
+	cis17.enrollStudent(jane, 1);
 
 	getchar();
 

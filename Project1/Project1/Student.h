@@ -7,6 +7,7 @@ private:
 	std::string _name;
 
 public:
+	Student();
 	Student(std::string name);
 	~Student();
 
