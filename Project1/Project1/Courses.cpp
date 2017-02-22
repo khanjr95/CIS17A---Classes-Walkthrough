@@ -21,3 +21,20 @@ bool Courses::enrollStudent(Student newStudent, int position)
 	}
 	return false;
 }
+
+string Courses::getClassInfo()
+{
+	string info = "Course Information for " + _name + "\n";
+	info += _description;
+	info += "\n------------------------------";
+	info += "\n";
+	for (auto student : _student)
+	{
+		if (student.getName()!="Null")
+		{
+			info += student.getName() + "\n";
+		}
+		
+	}
+	return info;
+}

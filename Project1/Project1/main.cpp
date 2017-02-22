@@ -14,6 +14,8 @@ int main()
 	cis17.enrollStudent(bob, 0);
 	cis17.enrollStudent(jane, 1);
 
+	cout << cis17.getClassInfo() << endl;
+
 	getchar();
 
 	return 0;
